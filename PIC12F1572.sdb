@@ -1,0 +1,300 @@
+[p GLOBOPT AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 12F1572 ]
+[d frameptr 6 ]
+"9 C:\Users\windows10\Documents\Faculdade\Estágio II\Códigos\PIC12F1572.c
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+"16
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+"20
+[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+"25
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+"29
+[v _UART_Read_Text UART_Read_Text `(v  1 e 1 0 ]
+"39
+[v _roundNum roundNum `(i  1 e 2 0 ]
+"42
+[v _readLM35 readLM35 `(i  1 e 2 0 ]
+"51
+[v _strstr strstr `(*.4uc  1 e 2 0 ]
+"76
+[v _strlen strlen `(i  1 e 2 0 ]
+"83
+[v _main main `(v  1 e 1 0 ]
+"32 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"505 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"56 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"44 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+[s S43 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"503 C:\Program Files\Microchip\xc8\v2.45\pic\include\proc\pic12f1572.h
+[u S51 . 1 `S43 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES51  1 e 1 @17 ]
+"1469
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1489
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"2480
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"2500
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"2520
+[v _SPBRG SPBRG `VEus  1 e 2 @411 ]
+"2567
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+"2629
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+"8584
+[v _GO_nDONE GO_nDONE `VEb  1 e 0 @1257 ]
+"9826
+[v _RCIF RCIF `VEb  1 e 0 @141 ]
+"10012
+[v _TRISA0 TRISA0 `VEb  1 e 0 @1120 ]
+"10015
+[v _TRISA1 TRISA1 `VEb  1 e 0 @1121 ]
+"10030
+[v _TRMT TRMT `VEb  1 e 0 @3313 ]
+"358 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"83 C:\Users\windows10\Documents\Faculdade\Estágio II\Códigos\PIC12F1572.c
+[v _main main `(v  1 e 1 0 ]
+{
+"104
+[v main@tempStr tempStr `[10]uc  1 a 10 54 ]
+"106
+[v main@lenStr lenStr `[10]uc  1 a 10 44 ]
+"103
+[v main@temp temp `i  1 a 2 64 ]
+"99
+[v main@req req `[64]uc  1 a 64 0 ]
+"130
+} 0
+"51
+[v _strstr strstr `(*.4uc  1 e 2 0 ]
+{
+[v strstr@str1 str1 `*.4DCuc  1 a 1 wreg ]
+"54
+[v strstr@s2 s2 `*.25uc  1 a 2 9 ]
+"53
+[v strstr@cp cp `*.4uc  1 a 1 11 ]
+"54
+[v strstr@s1 s1 `*.4uc  1 a 1 8 ]
+"51
+[v strstr@str1 str1 `*.4DCuc  1 a 1 wreg ]
+[v strstr@str2 str2 `*.25DCuc  1 p 2 0 ]
+"53
+[v strstr@str1 str1 `*.4DCuc  1 a 1 7 ]
+"74
+} 0
+"76
+[v _strlen strlen `(i  1 e 2 0 ]
+{
+[v strlen@str str `*.4DCuc  1 a 1 wreg ]
+"78
+[v strlen@len len `i  1 a 2 4 ]
+"76
+[v strlen@str str `*.4DCuc  1 a 1 wreg ]
+"78
+[v strlen@str str `*.4DCuc  1 a 1 3 ]
+"81
+} 0
+"505 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"545
+[v sprintf@val val `ui  1 a 2 11 ]
+"512
+[v sprintf@c c `uc  1 a 1 14 ]
+"521
+[v sprintf@prec prec `c  1 a 1 10 ]
+"525
+[v sprintf@flag flag `uc  1 a 1 9 ]
+"507
+[v sprintf@ap ap `[1]*.4v  1 a 1 8 ]
+"505
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.25DCuc  1 p 2 0 ]
+"550
+[v sprintf@sp sp `*.4uc  1 a 1 13 ]
+"1567
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"42 C:\Users\windows10\Documents\Faculdade\Estágio II\Códigos\PIC12F1572.c
+[v _readLM35 readLM35 `(i  1 e 2 0 ]
+{
+"47
+[v readLM35@voltage voltage `f  1 a 3 35 ]
+"48
+[v readLM35@temp temp `i  1 a 2 40 ]
+"46
+[v readLM35@adc adc `i  1 a 2 38 ]
+"50
+} 0
+"39
+[v _roundNum roundNum `(i  1 e 2 0 ]
+{
+[v roundNum@num num `f  1 p 3 30 ]
+"41
+} 0
+"44 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 14 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 18 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 13 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 6 ]
+"73
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 0 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 3 ]
+"13
+} 0
+"86 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 5 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 4 ]
+[v ___ftadd@sign sign `uc  1 a 1 3 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 8 ]
+[v ___ftadd@f2 f2 `f  1 p 3 11 ]
+"148
+} 0
+"62 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 10 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 14 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 13 ]
+[v ___ftmul@exp exp `uc  1 a 1 9 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 0 ]
+[v ___ftmul@f2 f2 `f  1 p 3 3 ]
+"157
+} 0
+"56 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 25 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 29 ]
+[v ___ftdiv@exp exp `uc  1 a 1 28 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 24 ]
+"56
+[v ___ftdiv@f2 f2 `f  1 p 3 15 ]
+[v ___ftdiv@f1 f1 `f  1 p 3 18 ]
+"86
+} 0
+"32 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 11 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"62 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"20 C:\Users\windows10\Documents\Faculdade\Estágio II\Códigos\PIC12F1572.c
+[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+{
+"21
+[v UART_Write_Text@i i `i  1 a 2 4 ]
+"20
+[v UART_Write_Text@text text `*.26DCuc  1 p 2 1 ]
+"24
+} 0
+"16
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+{
+[v UART_Write@data data `uc  1 a 1 wreg ]
+[v UART_Write@data data `uc  1 a 1 wreg ]
+[v UART_Write@data data `uc  1 a 1 0 ]
+"19
+} 0
+"29
+[v _UART_Read_Text UART_Read_Text `(v  1 e 1 0 ]
+{
+[v UART_Read_Text@Output Output `*.4uc  1 a 1 wreg ]
+"31
+[v UART_Read_Text@i i `i  1 a 2 4 ]
+"29
+[v UART_Read_Text@Output Output `*.4uc  1 a 1 wreg ]
+[v UART_Read_Text@length length `ui  1 p 2 0 ]
+"31
+[v UART_Read_Text@Output Output `*.4uc  1 a 1 3 ]
+"33
+} 0
+"25
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+{
+"28
+} 0
+"9
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+{
+"15
+} 0
